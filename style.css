@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", serif ;
     font-weight: 300;
     color: #41424C;    
-    background: url(/imgs/Photos-001/imagem_laiza_sem_moldura.png) ;   
+    background: url(../imgs/imagem_laiza_sem_moldura.png) ;   
     backdrop-filter: blur(70px);
     padding: 50px 0;
 }
