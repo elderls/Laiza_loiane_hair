@@ -39,12 +39,10 @@ h3 {
     border-radius: 10px;
     background-color: #F6C7DD;    
     padding: 10px 0 10px 0;
-
 }
 
 /* Area de seção */
 section.box {
-    width: 650px;
     margin: 10px auto;
     position: relative;
 
@@ -58,6 +56,8 @@ section.box {
     margin-bottom: 35px;
     margin-top: 40px;
     border-radius: 10px;
+    width: 400px;
+    height: 533px;
 
 }
 
@@ -135,7 +135,7 @@ section.box {
 .box-flex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;  
     margin-top: 25px; 
     margin-bottom: 45px;
     
@@ -241,5 +241,61 @@ footer strong {
 @media (max-width:645px) {
     #container {
         width: 100%;
+        padding: 0;
     }
+
+    section.box {
+        position: relative;
+        margin-top: 0;
+ 
+    }
+
+    /* area apresentacao */
+
+    .box #img-id {
+        width: 100%;
+        height: 533px;
+        margin-top: 0;
+        border-radius: none;
+    
+    }
+
+    /* area contato */
+
+    .box ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    
+    .box li i {
+
+        font-size: 1.7em;
+
+    }
+    
+    /* area procedimento */
+
+    .box-flex {
+        display: inline-block;
+        justify-items: center;
+        width: 100%;
+    }  
+    
+    .box-grid:hover  {
+        transform: none; 
+    }
+
+    /* area localizacao */
+
+}
+
+
+@media (max-width:370px) {
+
+    #container {
+        width: 375px;
+        padding: 0;
+    }
+
 }
