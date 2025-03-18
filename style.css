@@ -3,10 +3,20 @@
     padding: 0;
 }
 
+/* paleta de cores */
+:root {
+    --primary-color: #F6C7DD;
+    --secundary: white;
+    --tertiary:#D15F8B;
+    --fonts_color: #41424C;
+
+}
+
+
 body {
     font-family: "Poppins", serif ;
     font-weight: 300;
-    color: #41424C;    
+    color: var(--fonts_color);    
     background: url(imgs/imagem_laiza_sem_moldura.png) ;   
     backdrop-filter: blur(70px);
     padding: 50px 0;
@@ -15,7 +25,15 @@ body {
 a {
     text-decoration: none;
     list-style-type: none;
-    color: rgb(255, 255, 255);
+    color: var(--secundary);
+}
+
+p {
+    font-size: 1.2em;
+}
+
+li {
+    font-size: 1.2em;
 }
 
 h1 {
@@ -23,7 +41,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h3 {
@@ -37,7 +55,7 @@ h3 {
     max-width: 850px;
     margin: 0 auto;
     border-radius: 10px;
-    background-color: #F6C7DD;    
+    background-color: var(--primary-color);    
     padding: 10px 0 10px 0;
 }
 
@@ -45,7 +63,6 @@ h3 {
 section.box {
     margin: 10px auto;
     position: relative;
-
 }
 
 
@@ -91,8 +108,9 @@ section.box {
 
 /* seção contato */
 .box ul {
-    padding: 10px 0;
-
+    margin: 0 auto;
+    padding: 30px;
+    width: 90%;
 }
 
 .box ul li {
@@ -109,7 +127,7 @@ section.box {
     padding: 25px 0;
     border-radius: 50px;
     cursor: pointer;
-    background: #D15F8B;
+    background: var(--tertiary);
 }
 
 .box li i {
@@ -117,15 +135,15 @@ section.box {
     font-size: 40px;
     padding: 15px;
     margin-left: 65px;
-    color: #41424C;
+    color: var(--fonts_color);
     position: absolute;
     line-height: 55px;
 }
 
 .box ul li a:hover {
     background: none;
-    color: #D15F8B ;
-    border: 2px solid white;
+    color: var(--tertiary) ;
+    border: 2px solid var(--secundary);
     transition-duration: 0.7s;
     transform: scale(1.1);
 }
@@ -134,20 +152,22 @@ section.box {
 /* seção procedimentos */
 .box-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;  
     margin-top: 25px; 
     margin-bottom: 45px;
-    
+        
 }
 
 .box-grid {
-    border: 2px solid white;
+    border: 2px solid var(--primary-color);
     width: 300px;
     border-radius: 10px;
-    margin-bottom: 15px;
-    background: #D15F8B;
+    margin-bottom: 20px;
+    background: var(--tertiary);
     margin-top: 20px;
+    margin-left: 40px;
+    margin: 20px 40px 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +200,7 @@ section.box {
     width: 250px;
     height: 40px;
     margin: 10px auto;
-    background: #41424C;
+    background: var(--fonts_color);
     border: none;
     border-radius: 5px;
     color: white;
@@ -190,7 +210,7 @@ section.box {
 
 .box-grid input:hover {
     background: white;
-    color: #41424C;
+    color: var(--fonts_color);
     transition-duration: 0.7s;
 }
 
@@ -212,18 +232,87 @@ section.box {
 footer {
     text-align: center;
     padding: 15px 0;
-    color: #41424C;
+    color: var(--fonts_color);
     font-size: 0.9em;
 }
 
 footer a {
-    color: #41424C;
+    color: var(--fonts_color);
     font-size: 0.8em;
 }
 
 footer strong {
     color: #062096;
 }
+
+
+/* css pagina cronograma */
+
+#body_secundary {
+    background-image: none;
+    background: var(--primary-color);
+    
+}
+
+.fa-solid {
+    font-size: 1.7em;
+    margin: 10px;
+    color: var(--fonts_color);
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.fa-solid:hover {
+    background: #D15F8B;
+    transition: 0.8s;
+}
+
+#container2 {
+    max-width: 1440px;
+    width: 70%;
+    border: 2px solid var(--secundary);
+    margin: 0 auto;
+
+}
+
+.A-info h1{
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+.A-img img{
+    width: 100%;
+}
+
+.A-texto {
+    padding: 20px 10px;
+}
+
+.A-texto h2 {
+    text-align: start;
+    margin-bottom: 15px;    
+}
+
+.A-texto p {
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+/* css pagina progressiva */
+
+.A-texto ul, ol {
+    padding: 10px 40px;
+}
+
+.A-texto li {
+    padding: 5px 0;
+}
+
+
+/* responsividade */
 
 
 @media (max-width:850px) {
@@ -263,7 +352,7 @@ footer strong {
     /* area contato */
 
     .box ul {
-        width: 100%;
+
         margin: 0 auto;
     }
 
@@ -282,8 +371,16 @@ footer strong {
         width: 100%;
     }  
     
+    .box-grid {
+        margin: 40px auto;
+    }
+
     .box-grid:hover  {
         transform: none; 
+    }
+
+    .fa-solid {
+        text-align: center;
     }
 
     /* area localizacao */
