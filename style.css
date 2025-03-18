@@ -379,10 +379,10 @@ footer strong {
         transform: none; 
     }
 
-    .fa-solid {
-        text-align: center;
+    #container2 {
+        width: 100%;
+        border: none;
     }
-
     /* area localizacao */
 
 }
