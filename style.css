@@ -113,10 +113,22 @@ section.box {
     width: 90%;
 }
 
+
 .box ul li {
     list-style: none;
 
 }
+
+.box li i {
+    float: left;
+
+    padding: 15px;
+    margin-left: 65px;
+    color: var(--fonts_color);
+    position: absolute;
+    line-height: 55px;
+}
+
 
 .box ul li a {
     text-align: center;
@@ -130,16 +142,8 @@ section.box {
     background: var(--tertiary);
 }
 
-.box li i {
-    float: left;
-    font-size: 40px;
-    padding: 15px;
-    margin-left: 65px;
-    color: var(--fonts_color);
-    position: absolute;
-    line-height: 55px;
-}
 
+/* tratamento de efeito */ 
 .box ul li a:hover {
     background: none;
     color: var(--tertiary) ;
@@ -246,7 +250,7 @@ footer strong {
 }
 
 
-/* css pagina cronograma */
+/* css pagina  */
 
 #body_secundary {
     background-image: none;
@@ -254,19 +258,6 @@ footer strong {
     
 }
 
-.fa-solid {
-    font-size: 1.7em;
-    margin: 10px;
-    color: var(--fonts_color);
-    padding: 10px;
-    border-radius: 50%;
-
-}
-
-.fa-solid:hover {
-    background: #D15F8B;
-    transition: 0.8s;
-}
 
 #container2 {
     max-width: 1440px;
@@ -352,17 +343,17 @@ footer strong {
     /* area contato */
 
     .box ul {
-
-        margin: 0 auto;
+        margin: 0 ;
+        padding: 0;
+ 
+        width: 100%;
     }
 
     
     .box li i {
-
         font-size: 1.7em;
-
     }
-    
+
     /* area procedimento */
 
     .box-flex {
