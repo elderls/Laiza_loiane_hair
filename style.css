@@ -250,11 +250,12 @@ footer strong {
 }
 
 
-/* css pagina  */
+/* css paginas  */
 
 #body_secundary {
     background-image: none;
     background: var(--primary-color);
+
     
 }
 
@@ -263,18 +264,57 @@ footer strong {
     max-width: 1440px;
     width: 70%;
     border: 2px solid var(--secundary);
+    border-radius: 10px;
     margin: 0 auto;
 
 }
 
-.A-info h1{
+
+.A-info {
     text-align: center;
-    margin: 15px 0;
+}
+
+.A-title {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.A-title a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 
-.A-img img{
-    width: 100%;
+.A-title a:hover {
+    background: #D15F8B;
+    transition: 0.8s;
+}
+
+/* efeito seta volta para menu */
+.fa-solid {
+    font-size: 1.7em;    
+    color: var(--fonts_color);
+}
+
+
+
+.A-title h1 {
+    margin: 0 auto;
+    align-items: center;
+    line-height: 65px
+ 
+}
+
+.A-img {
+    height: 356px;
 }
 
 .A-texto {
