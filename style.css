@@ -313,8 +313,9 @@ footer strong {
  
 }
 
-.A-img {
-    height: 356px;
+.A-img img{
+    height: 60%;
+    width: 70%;
 }
 
 .A-texto {
@@ -362,6 +363,11 @@ footer strong {
     #container {
         width: 100%;
         padding: 0;
+    }
+
+    .A-img img{
+        height: 100%;
+        width: 100%;
     }
 
     section.box {
