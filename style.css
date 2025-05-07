@@ -185,16 +185,18 @@ section.box {
 
 .box-grid h3{
     color: white;
-    padding-top: 10px;
+    padding-top: 15px;
+    text-transform: uppercase;
 
 }
 
+/* tag removida do html
 .box-grid strong {
     padding-top: 5px;
     display: block;
     color: white;
 }
-
+*/
 .box-grid:hover  {
     transform: scale(1.1);
     transition-duration: 0.7s;
@@ -203,7 +205,7 @@ section.box {
 .box-grid input {
     width: 250px;
     height: 40px;
-    margin: 10px auto;
+    margin: 20px auto;
     background: var(--fonts_color);
     border: none;
     border-radius: 5px;
@@ -248,7 +250,6 @@ footer a {
 footer strong {
     color: #062096;
 }
-
 
 /* css paginas  */
 
